@@ -28,7 +28,7 @@ Users should be able to:
 
 ### Links
 
-[Live DEMO] (https://your-live-site-url.com)
+[Live DEMO] (https://interactive-rating-component-peach-theta.vercel.app/)
 
 ### Built with
 
