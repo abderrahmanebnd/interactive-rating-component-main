@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/svg"
+      sizes="32x32"
+      href="./images/icon-star.svg"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <title>Frontend Mentor | Interactive rating component</title>
+    <link rel="stylesheet" href="style.css" />
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+        color: white;
+      }
+      .attribution a {
+        color: #fb7413;
+        text-decoration: none;
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <!-- Rating state start -->
+      <section id="rating-state">
+        <div class="star">
+          <img src="./images/icon-star.svg" alt="Star Icon" />
+        </div>
+        <h1>How did we do?</h1>
+        <p class="description">
+          Please let us know how we did with your support request. All feedback
+          is appreciated to help us improve our offering!
+        </p>
+        <form>
+          <ul class="rating">
+            <li class="rate">
+              <input id="rate-btn" type="button" value="1" />
+            </li>
+            <li class="rate">
+              <input id="rate-btn" type="button" value="2" />
+            </li>
+            <li class="rate">
+              <input id="rate-btn" type="button" value="3" />
+            </li>
+            <li class="rate">
+              <input id="rate-btn" type="button" value="4" />
+            </li>
+            <li class="rate">
+              <input id="rate-btn" type="button" value="5" />
+            </li>
+          </ul>
+          <input id="submit" type="submit" value="Submit" />
+        </form>
+      </section>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+      <section id="thanks" class="d-none">
+        <div class="card">
+          <img src="./images/illustration-thank-you.svg" alt="Thanks" />
+        </div>
+        <div class="rate-choice">
+          You selected <span id="rate-number"></span> out of 5
+        </div>
+        <h2>Thank you!</h2>
+        <p class="appreciation">
+          We appreciate you taking the time to give a rating. If you ever need
+          more support, don’t hesitate to get in touch!
+        </p>
+      </section>
+      <!-- Thank you state end -->
+    </main>
+    <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by
+      <a target="_blank" href="https://github.com/abderrahmanebnd"
+        >Bendaia Abderrahmane</a
+      >.
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>

@@ -1,0 +1,176 @@
+/* - Mobile: 375px - Desktop: 1440px */
+
+*,
+::before,
+::after {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+:root {
+    /* Primary */
+    --Orange: #fb7413; 
+    /* Neutral */
+    --White: #ffffff;
+    --Light-Grey: #959eac; 
+    --Medium-Grey: #7c8798;
+    --Dark-Blue: #252d37;
+    --Very-Dark-Blue: #121417;
+    /* Transition */
+    --transition-dur : 0.4s; 
+}
+p {
+    font-size: 15px;
+}
+ul {
+    list-style: none;
+}
+body {
+    font-family: 'Overpass', sans-serif;
+    background-color: var(--Very-Dark-Blue);
+}
+.d-none {
+    display: none;
+}
+main {
+    background-color: var(--Dark-Blue);
+    margin: 2rem auto;
+    border-radius: 1.7rem;
+    width: 400px;
+    
+}
+main #rating-state {
+    padding: 2rem;
+}
+
+/* Start rating start */
+@media (max-width:500px) {
+    main {
+        width: 80%;
+    }
+    main #rating-state {
+        padding: 1.5rem;
+    }
+    
+}
+main #rating-state .star {  
+    background-color:#7c879820;
+    height: 40px;
+    width: 40px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #rating-state h1{
+    color: var(--White);
+    margin-top: 1.7rem;
+    margin-bottom: 0.5rem;
+}
+main #rating-state .description{
+    color: var(--Medium-Grey);
+    line-height: 1.6;
+}
+
+main #rating-state ul {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap:wrap ;
+    margin: 1rem 0 ;
+    padding: 0.5rem 0;
+
+}
+@media (max-width:500px) {
+    main #rating-state ul {
+        margin: 0.8rem 0;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 0.5rem;
+    }
+}
+
+main #rating-state ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main #rating-state ul li input[type=button] {
+    color: var(--Light-Grey);
+    font-weight: bold;
+    border-radius: 50%;
+    font-family: inherit;
+    cursor: pointer;
+    height: 40px;
+    width: 40px;
+    background-color: #7c879820;
+    border: none;
+    font-size: 15px;
+    transition: var(--transition-dur);
+    
+    &:focus {
+        color: white;
+        outline: none;
+        background-color: var(--Orange);
+    }
+}
+main #rating-state ul li:hover input{
+    background-color: var(--Medium-Grey);
+    color: var(--White);
+}
+
+main #rating-state [type = submit]{
+    width: 100%;
+    padding: 0.7rem;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-weight: 700;
+    color: var(--White);
+    background-color: var(--Orange);
+    border: none;
+    border-radius: 40px;
+    transition: var(--transition-dur);
+    cursor: pointer;
+    outline: none;
+    
+    &:focus {
+        outline: 2px solid var(--White);
+    }
+    &:hover {
+        background-color: var(--White);
+        color: var(--Orange);
+    }
+}
+/* End rating state */
+
+/* Start Thank You  */
+main #thanks {
+    padding: 2rem;
+    text-align: center;
+}
+
+main #thanks .card img{
+    max-width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+main #thanks .rate-choice{
+    background: #7c879820;
+    font-size: 15px;
+    color: var(--Orange);
+    width: fit-content;
+    margin: 0 auto 1.5rem;
+    padding: 0.6rem 1.2rem;
+    border-radius: 1.5rem;
+}
+
+main #thanks h2{
+    color: var(--White);
+    margin-bottom: 1rem;
+}
+main #thanks .appreciation{
+    color: var(--Medium-Grey);
+    line-height: 1.7;
+}
+/* end Thank You  */
